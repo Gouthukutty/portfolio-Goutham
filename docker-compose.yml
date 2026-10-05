@@ -1,0 +1,7 @@
+services:
+  portfolio:
+    image: ${DOCKERHUB_USERNAME}/goutham-portfolio:latest
+    container_name: goutham-portfolio
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
